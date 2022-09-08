@@ -1,6 +1,5 @@
 <!--------------------------- Learning Phase 11 ----------------->
 <template>
-    <pre>{{this.user}}</pre>
     <div class="container">
       <div class="row">
           <div class="card-md-3">
@@ -9,7 +8,8 @@
                       <p class="h3">Register Here</p> 
                   </div>
                   <div class="card-body bg-light">
-                    <form>
+                    <!-- "prevent" here is to avoid page refresh -->
+                    <form @submit.prevent="register()">
                         <!-- v-model is used to bind the input data into the methods below for rendering -->
                         <div class="mb-2">
                             <input v-model="user.name" class="form-control" placeholder="Name" type="text">
@@ -41,6 +41,11 @@
                 email: "",
                 password: ""
             }
+        }
+    },
+    methods: {
+        register: function() {
+            console.log(this.user)
         }
     }
   }; 
