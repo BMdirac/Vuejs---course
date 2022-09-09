@@ -1,9 +1,42 @@
+<!--------------------------- Learning Phase 12 ----------------->
+<!-- About learning phase 12 -->
+<!-- 
+  It's about Conditional and List rendering
+ -->
+<template>
+  <div class="container mt-3">
+    <div class="grid">
+      <div class="row">
+        <div class="col">
+          <p class="h3 text-success fw-bold">App Component</p>
+          <p class="fst-italic">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex iste aliquam illum voluptatum tempora est mollitia? Nostrum quisquam nam itaque illum laboriosam eaque repellat voluptatum! Sint quidem illum fugit voluptate.</p>
+        </div> 
+      </div>
+    </div>
+
+    <AuthUser />
+  </div>
+</template>
+
+<script>
+import AuthUser from './components/AuthUser.vue';
+
+
+export default {
+  components: { AuthUser }
+}
+</script>
+
+<style>
+  @import "./styles.css";
+</style>
+
 <!--------------------------- Learning Phase 11 ----------------->
 <!-- About learning phase 11 -->
 <!-- 
   It's about how to submit form
  -->
-<template>
+<!-- <template>
   <div class="container mt-3">
     <div class="grid">
       <div class="row">
@@ -29,7 +62,7 @@ export default {
 
 <style>
   @import "./styles.css";
-</style>
+</style> -->
 
 <!--------------------------- Learning Phase 10 ----------------->
 <!-- About learning phase 10 -->
