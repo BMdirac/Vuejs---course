@@ -1,9 +1,180 @@
-<!--------------------------- Learning Phase 12 ----------------->
-<!-- About learning phase 12 -->
+<!--------------------------- Learning Phase 18 ----------------->
+<!-- About learning phase 18 -->
 <!-- 
-  It's about Conditional and List rendering
+  It's about vue router
  -->
 <template>
+    <NavBar />
+    <router-view />
+</template>
+
+<script>
+import NavBar from "@/components/NavBar";
+
+export default {
+  components: { NavBar }
+}
+</script>
+
+<style>
+  @import "./styles.css";
+</style>
+
+<!--------------------------- Learning Phase 17 ----------------->
+<!-- About learning phase 17 -->
+<!-- 
+  is to assign the data to a local variable for display
+
+  loading: for spinner, and errorMessage: to display error, are established
+
+  spinner gif (image) is also added. (use wrong url and reload to see the effect)
+ -->
+<!-- <template>
+  <div class="container mt-3">
+    <div class="grid">
+      <div class="row">
+        <div class="col">
+          <p class="h3 text-success fw-bold">App Component</p>
+          <p class="fst-italic">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex iste aliquam illum voluptatum tempora est mollitia? Nostrum quisquam nam itaque illum laboriosam eaque repellat voluptatum! Sint quidem illum fugit voluptate.</p>
+        </div> 
+      </div>
+    </div>
+
+    <UserList />
+  </div>
+</template>
+
+<script>
+import UserList from './components/UserList.vue';
+
+export default {
+  components: { UserList }
+}
+</script>
+
+<style>
+  @import "./styles.css";
+</style>
+ -->
+
+<!--------------------------- Learning Phase 16 ----------------->
+<!-- About learning phase 16 -->
+<!-- 
+  is about geting data from server instead of having it locally ( and request for usage)
+
+  to achieve this "axios package has to be installed"
+ -->
+<!-- <template>
+  <div class="container mt-3">
+    <div class="grid">
+      <div class="row">
+        <div class="col">
+          <p class="h3 text-success fw-bold">App Component</p>
+          <p class="fst-italic">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex iste aliquam illum voluptatum tempora est mollitia? Nostrum quisquam nam itaque illum laboriosam eaque repellat voluptatum! Sint quidem illum fugit voluptate.</p>
+        </div> 
+      </div>
+    </div>
+
+    <UserList />
+  </div>
+</template>
+
+<script>
+import UserList from './components/UserList.vue';
+
+
+export default {
+  components: { UserList }
+}
+</script>
+
+<style>
+  @import "./styles.css";
+</style>
+ -->
+<!--------------------------- Learning Phase 15 ----------------->
+<!-- About learning phase 15 -->
+<!-- 
+  refracturing to have a service provider by creating a folder called service
+  and in it we also create a file called UserService.js
+  this file is imported in UserList.vue file
+  
+  In this case the code in UserList (learning phase 14) will be reduced
+ -->
+<!-- <template>
+  <div class="container mt-3">
+    <div class="grid">
+      <div class="row">
+        <div class="col">
+          <p class="h3 text-success fw-bold">App Component</p>
+          <p class="fst-italic">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex iste aliquam illum voluptatum tempora est mollitia? Nostrum quisquam nam itaque illum laboriosam eaque repellat voluptatum! Sint quidem illum fugit voluptate.</p>
+        </div> 
+      </div>
+    </div>
+
+    <UserList />
+  </div>
+</template>
+
+<script>
+import UserList from './components/UserList.vue';
+
+
+export default {
+  components: { UserList }
+}
+</script>
+
+<style>
+  @import "./styles.css";
+</style> -->
+
+<!--------------------------- Learning Phase 14 ----------------->
+<!-- About learning phase 14 -->
+<!-- 
+  It's about List looping and rendering
+  (list is gotten from 'json placeholder website': https://jsonplaceholder.typicode.com/users)
+
+  v-for is used here
+  and static list is formed
+ -->
+<!-- <template>
+  <div class="container mt-3">
+    <div class="grid">
+      <div class="row">
+        <div class="col">
+          <p class="h3 text-success fw-bold">App Component</p>
+          <p class="fst-italic">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex iste aliquam illum voluptatum tempora est mollitia? Nostrum quisquam nam itaque illum laboriosam eaque repellat voluptatum! Sint quidem illum fugit voluptate.</p>
+        </div> 
+      </div>
+    </div>
+
+    <UserList />
+  </div>
+</template>
+
+<script>
+import UserList from './components/UserList.vue';
+
+
+export default {
+  components: { UserList }
+}
+</script>
+
+<style>
+  @import "./styles.css";
+</style> -->
+
+<!--------------------------- Learning Phase 13b ----------------->
+<!-- About learning phase 13b -->
+<!-- 
+  It's about Conditional rendering
+
+  We want one button to show at a time
+  v-if is applied on both buttons
+ -->
+<!-- <template>
   <div class="container mt-3">
     <div class="grid">
       <div class="row">
@@ -29,7 +200,76 @@ export default {
 
 <style>
   @import "./styles.css";
-</style>
+</style> -->
+
+<!--------------------------- Learning Phase 13a ----------------->
+<!-- About learning phase 13a -->
+<!-- 
+  It's about Conditional rendering
+
+  We want some part of AuthUser to be display on condition
+  this is done using the 'v-if' which is apply on some div
+ -->
+<!-- <template>
+  <div class="container mt-3">
+    <div class="grid">
+      <div class="row">
+        <div class="col">
+          <p class="h3 text-success fw-bold">App Component</p>
+          <p class="fst-italic">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex iste aliquam illum voluptatum tempora est mollitia? Nostrum quisquam nam itaque illum laboriosam eaque repellat voluptatum! Sint quidem illum fugit voluptate.</p>
+        </div> 
+      </div>
+    </div>
+
+    <AuthUser />
+  </div>
+</template>
+
+<script>
+import AuthUser from './components/AuthUser.vue';
+
+
+export default {
+  components: { AuthUser }
+}
+</script>
+
+<style>
+  @import "./styles.css";
+</style> -->
+
+<!--------------------------- Learning Phase 12 ----------------->
+<!-- About learning phase 12 -->
+<!-- 
+  It's about Conditional rendering
+ -->
+<!-- <template>
+  <div class="container mt-3">
+    <div class="grid">
+      <div class="row">
+        <div class="col">
+          <p class="h3 text-success fw-bold">App Component</p>
+          <p class="fst-italic">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex iste aliquam illum voluptatum tempora est mollitia? Nostrum quisquam nam itaque illum laboriosam eaque repellat voluptatum! Sint quidem illum fugit voluptate.</p>
+        </div> 
+      </div>
+    </div>
+
+    <AuthUser />
+  </div>
+</template>
+
+<script>
+import AuthUser from './components/AuthUser.vue';
+
+
+export default {
+  components: { AuthUser }
+}
+</script>
+
+<style>
+  @import "./styles.css";
+</style> -->
 
 <!--------------------------- Learning Phase 11 ----------------->
 <!-- About learning phase 11 -->
