@@ -1,7 +1,12 @@
-<!--------------------------- Learning Phase 18 ----------------->
-<!-- About learning phase 18 -->
+<!--------------------------- Final Learning Phase ----------------->
+<!-- About -->
 <!-- 
-  It's about vue router
+  User detail is received in the console log 
+
+  this learning phase is to display it by the use of "data" 
+  function in UserDetail component
+
+  spinner is also added for loading display 
  -->
 <template>
     <NavBar />
@@ -20,6 +25,51 @@ export default {
   @import "./styles.css";
 </style>
 
+<!--------------------------- Learning Phase 19 ----------------->
+<!-- About learning phase 19 -->
+<!-- 
+  UserDetails component is created
+  which can be accessed via user name in UserList component
+ -->
+<!-- <template>
+    <NavBar />
+    <router-view />
+</template>
+
+<script>
+import NavBar from "@/components/NavBar";
+
+export default {
+  components: { NavBar }
+}
+</script>
+
+<style>
+  @import "./styles.css";
+</style> -->
+
+<!--------------------------- Learning Phase 18 ----------------->
+<!-- About learning phase 18 -->
+<!-- 
+  It's about vue router
+ -->
+<!-- <template>
+    <NavBar />
+    <router-view />
+</template>
+
+<script>
+import NavBar from "@/components/NavBar";
+
+export default {
+  components: { NavBar }
+}
+</script>
+
+<style>
+  @import "./styles.css";
+</style>
+ -->
 <!--------------------------- Learning Phase 17 ----------------->
 <!-- About learning phase 17 -->
 <!-- 
